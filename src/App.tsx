@@ -1,24 +1,55 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
+
+  var name = "Heike";
+
+  //UPPERCASE FUNCTION
+  const vowelUppercase = (str: string) => {
+    var N = str.length;
+    for (var i = 0; i < N; i++) {
+      if (
+        str[i] === "a" ||
+        str[i] === "e" ||
+        str[i] === "i" ||
+        str[i] === "o" ||
+        str[i] === "u"
+      ) {
+        document.write(str[i].toUpperCase());
+      } else {
+        document.write(str[i]);
+      }
+    }
+  }
+
+  //REVERSE NAME FUNCTION
+  const reverseName = (str: string) => {
+    var splitstring = str.split("");
+    var reverseArray = splitstring.reverse();
+    var joinArray = reverseArray.join("");
+    return joinArray;
+  }
+
+  //DISPLAY ALERT FUNCTION
+  function displayalert() {
+    var reversestring = reverseName(name);
+    var uppercasestring = vowelUppercase(reversestring);
+    alert(uppercasestring);
+
+  }
+
+  //BUTTON CLICK FUNCTION
+  const buttonClick = () => {
+    displayalert()
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Heike</h1>
+      <button type="button" onClick={buttonClick}>CLICK</button>
     </div>
   );
 }
