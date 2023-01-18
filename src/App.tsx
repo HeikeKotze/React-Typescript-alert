@@ -38,7 +38,7 @@ function App() {
   function displayalert() {
     var reversestring = reverseName(name);
     var uppercasestring = vowelUppercase(reversestring);
-    alert(uppercasestring);
+    alert(reversestring);
 
   }
 
