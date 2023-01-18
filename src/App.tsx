@@ -24,6 +24,8 @@ function App() {
     }
   }
 
+
+
   //REVERSE NAME FUNCTION
   const reverseName = (str: string) => {
     var splitstring = str.split("");
