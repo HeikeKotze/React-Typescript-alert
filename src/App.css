@@ -1,14 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.button {
-  background-color: #050302;
-  border: none;
-  color: rgb(213, 40, 40);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+body {
+  margin: 100;
 }

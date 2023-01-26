@@ -1,30 +1,16 @@
-import React from 'react';
 import './App.css';
+import Button from "./ButtonComponent";
 
 
 function App() {
 
-  var name = "Heike";
+  //GLOBAL VARIABLE
+  var name = "Heike Kotze";
 
   //UPPERCASE FUNCTION
   const vowelUppercase = (str: string) => {
-    var N = str.length;
-    for (var i = 0; i < N; i++) {
-      if (
-        str[i] === "a" ||
-        str[i] === "e" ||
-        str[i] === "i" ||
-        str[i] === "o" ||
-        str[i] === "u"
-      ) {
-        document.write(str[i].toUpperCase());
-      } else {
-        document.write(str[i]);
-      }
-    }
+    return str.split('').reduce((a, c) => a + (/[aeou]/i.test(c) ? c.toUpperCase() : c.toLowerCase()), "");
   }
-
-
 
   //REVERSE NAME FUNCTION
   const reverseName = (str: string) => {
@@ -38,21 +24,22 @@ function App() {
   function displayalert() {
     var reversestring = reverseName(name);
     var uppercasestring = vowelUppercase(reversestring);
-    alert(reversestring);
-
+    alert(uppercasestring);
   }
-
-  //BUTTON CLICK FUNCTION
-  const buttonClick = () => {
-    displayalert()
-  }
-
 
   return (
-    <div className="App">
-      <h1>Heike</h1>
-      <button type="button" onClick={buttonClick}>CLICK</button>
-    </div>
+    <>
+      <h1>Heike Kotze</h1>
+      <Button
+        border='dotted'
+        color='grey'
+        height='100px'
+        onClick={() => displayalert()}
+        radius='30%'
+        width='100px'
+        children="Click"
+      />
+    </>
   );
 }
 
