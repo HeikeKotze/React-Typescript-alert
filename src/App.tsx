@@ -34,7 +34,7 @@ function App() {
           <h1>Heike Kotze</h1>
           <Button
             border='5px'
-            color='blue'
+            color='grey'
             height='70px'
             onClick={() => displayalert()}
             radius='50%'
