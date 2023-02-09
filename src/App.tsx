@@ -29,16 +29,20 @@ function App() {
 
   return (
     <>
-      <h1>Heike Kotze</h1>
-      <Button
-        border='dotted'
-        color='grey'
-        height='100px'
-        onClick={() => displayalert()}
-        radius='30%'
-        width='100px'
-        children="Click"
-      />
+      <div>
+        <form>
+          <h1>Heike Kotze</h1>
+          <Button
+            border='5px'
+            color='blue'
+            height='70px'
+            onClick={() => displayalert()}
+            radius='50%'
+            width='70px'
+            children="Click"
+          />
+        </form>
+      </div>
     </>
   );
 }
