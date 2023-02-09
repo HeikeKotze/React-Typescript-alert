@@ -3,7 +3,7 @@ body {
 }
 
 form {
-  background-color: darkslategrey;
+  background-color: silver;
   padding: 3em;
   border-radius: 10px;
   justify-content: center;
@@ -16,6 +16,7 @@ form {
   align-items: column;
   border: 2px;
   border-color: black;
+  font-family: cursive;
 }
 
 div {
