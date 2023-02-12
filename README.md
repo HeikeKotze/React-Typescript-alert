@@ -1,3 +1,19 @@
+This file was created using Create React App. 
+
+It was my first attempt at working with Typescript and React. 
+
+It included a header, button and alert function that reverses the name in the header and uppercased all the vocals and displays it in the alert.
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
